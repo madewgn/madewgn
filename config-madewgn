@@ -1,0 +1,49 @@
+baseurl: 'https://madewgn.github.io/'
+title: Made Wiguna Bloggers
+theme: madewgn
+googleAnalytics: G-R5MQJQPE57
+disqusShortname: madekun
+
+permalinks:
+  post: '/artikel/:slug/'
+  page: '/:slug/'
+
+params:
+  author: Made Wiguna
+  description: 'Hello, di sini made wiguna. Blog ini belum jadi. Sabar ya...'
+
+frontmatter:
+  date:
+    - date
+    - publishDate
+    - lastmod
+  lastmod:
+    - ':git'
+    - lastmod
+    - date
+    - publishDate
+  publishDate:
+    - publishDate
+    - date
+  expiryDate:
+    - expiryDate
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 1
+    - identifier: art
+      name: Home
+      url: /
+      weight: 2
+    - identifier: Telegram
+      name: Telegram
+      url: 'https://t.me/madewgn/'
+      weight: 3
+    - identifier: github
+      name: Github
+      url: 'https://github.com/madewgn'
+      weight: 4
+    
